@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@
 
 :root{
     --christmas-font: 'Mountains of Christmas', cursive;
+    --text-font: 'Pacifico', cursive;
 }
 
                             /********* GENERAL CLASSES *********/
@@ -58,9 +61,19 @@ nav{
 }
 
 nav, #nav-items{
-    background-color: red;
+    background-color: black;
+    font-family: var(--christmas-font);
     height: 7vh;
     width: 100%;
+}
+
+#nav-items li a:hover{
+    color: red;
+    border-bottom: 2px dashed green;
+}
+
+#nav-items a{
+    color: white;
 }
 
 nav #nav-items{
@@ -81,6 +94,10 @@ nav #nav-items{
 
 #home{
     min-height: 100vh;
+    background: url(../img/landscape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #home #container-title{
@@ -116,18 +133,18 @@ nav #nav-items{
                             /********* SECTION CHRISTMAS **********/
 
 #christmas{
-    border: 1px solid yellow;
-    min-height: 93vh;
-}
-
-#christmas h2{
-    font-family: var(--christmas-font);   
-    font-size: 4rem;
+    padding-top: 7vh;
+    min-height: 100vh;
 }
 
 #christmas #title-christmas{
     margin-top: 5vh;
     position: relative;
+}
+
+#christmas h2{
+    font-family: var(--christmas-font);   
+    font-size: 4rem;
 }
 
 .bar{
@@ -149,4 +166,95 @@ nav #nav-items{
     position: absolute;
     bottom: 0;
     right: -10rem;
+}
+
+#christmas #christmas-main{
+    padding: 20px;
+    margin-top: 10vh;
+    width: 80%;
+    min-height: 10vh;
+    justify-content: space-between;
+}
+
+#christmas #christmas-main #christmas-paragraph{
+    width: 45%;
+    height: 50vh;
+    padding: 10px;
+    font-size: 1.7rem;
+    font-family: var(--text-font);
+    text-align: justify;
+    color: #FFD700;
+}
+
+#christmas #christmas-main #christmas-img{
+    border: 2px solid white;
+    width: 40%;
+    height: 50vh;
+    overflow: hidden;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+#christmas #christmas-main #christmas-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 2px;
+}
+
+
+
+                                /********** SECTION TRADITION ************/
+
+#tradition{
+    padding-top: 7vh;
+    min-height: 100vh;
+}
+
+#tradition #title-tradition{
+    margin-top: 3vh;
+    position: relative;
+}
+
+#tradition h2{
+    font-family: var(--christmas-font);   
+    font-size: 4rem;
+}
+
+#tradition #container-traditions{
+    width: 90%;
+    min-height: 40vh;
+    margin-top: 20vh;
+    justify-content: space-between;
+ 
+}
+
+#tradition #container-traditions .traditions{
+    width: 450px;
+}
+
+#tradition #container-traditions .traditions .img-container{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 3px solid #FFD700;
+    overflow: hidden;
+    background-color: rgb(206, 204, 204);
+}
+
+#tradition #container-traditions .traditions .img-container:hover img{
+    filter: grayscale(1);
+}
+
+#tradition #container-traditions .traditions img{
+    height: auto;
+    width: 100%;
+}
+
+#tradition #container-traditions .traditions .texte-trad{
+    font-family: var(--text-font);
+    color: #FFD700;
+    font-size: 1.5rem;
+    text-align: center;
+    
 }
