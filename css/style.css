@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --christmas-font: 'Mountains of Christmas', cursive;
+}
+
+                            /********* GENERAL CLASSES *********/
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.aic{
+    align-items: center;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+
+                            /***************** GENERAL STYLE ******************/
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container-page{
+    /* background-color: black; */
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+                            /************* HEADER *******************/
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav, #nav-items{
+    background-color: red;
+    height: 7vh;
+    width: 100%;
+}
+
+nav #nav-items{
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+                                /************  MAIN *****************/
+
+#main{
+    /* margin-top: 7vh; */
+    background-color: rgb(0, 3, 9);
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+
+                                /*************  SECTION HOME **************/
+
+#home{
+    min-height: 100vh;
+}
+
+#home #container-title{
+    position: relative;
+}
+
+#home h1{
+    font-family: var(--christmas-font);
+    font-size: 4rem;
+    color: #FFD700;
+}
+
+#snow1,#snow2{
+    font-size: 5rem;
+}
+
+#home #container-title #snow1{
+    position: absolute;
+    top: -5rem;
+    left: -5rem;
+    color: green;
+}
+
+
+#home #container-title #snow2{
+    position: absolute;
+    bottom: -5rem;
+    right: -5rem;
+    color: red;
+}
+
+
+                            /********* SECTION CHRISTMAS **********/
+
+#christmas{
+    border: 1px solid yellow;
+    min-height: 93vh;
+}
+
+#christmas h2{
+    font-family: var(--christmas-font);   
+    font-size: 4rem;
+}
+
+#christmas #title-christmas{
+    margin-top: 5vh;
+    position: relative;
+}
+
+.bar{
+    width: 60%;
+    border-top: 2px dotted white;
+}
+
+#christmas #title-christmas i{
+    font-size: 4rem;
+}
+
+#christmas #title-christmas #tree1{
+    position: absolute;
+    bottom: 0;
+    left: -10rem;
+}
+
+#christmas #title-christmas #tree2{
+    position: absolute;
+    bottom: 0;
+    right: -10rem;
+}
