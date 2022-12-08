@@ -160,12 +160,16 @@ nav #nav-items{
     position: absolute;
     bottom: 0;
     left: -10rem;
+    color: rgb(3, 61, 26);
+    animation: colorAnimation2 5s linear infinite;
 }
 
 #christmas #title-christmas #tree2{
     position: absolute;
     bottom: 0;
     right: -10rem;
+    color: rgb(3, 61, 26);
+    animation: colorAnimation2 5s linear infinite;
 }
 
 #christmas #christmas-main{
@@ -221,6 +225,26 @@ nav #nav-items{
     font-size: 4rem;
 }
 
+#tradition #title-tradition i{
+    font-size: 4rem;
+}
+
+#tradition #title-tradition #candy1{
+    position: absolute;
+    bottom: 0;
+    left: -10rem;
+    color: rgb(161, 7, 7);
+    animation: colorAnimation2 5s linear infinite;
+}
+
+#tradition #title-tradition #candy2{
+    position: absolute;
+    bottom: 0;
+    right: -10rem;
+    color: rgb(161, 7, 7);
+    animation: colorAnimation2 5s linear infinite;
+}
+
 #tradition #container-traditions{
     width: 90%;
     min-height: 40vh;
@@ -257,4 +281,153 @@ nav #nav-items{
     font-size: 1.5rem;
     text-align: center;
     
+}
+
+
+                                    /********* SECTION SANTA **************/
+
+#santa{
+padding-top: 7vh;
+    min-height: 100vh;
+}
+                                    
+#santa #title-santa{
+    margin-top: 3vh;
+    position: relative;
+}
+                                    
+#santa h2{
+    font-family: var(--christmas-font);   
+    font-size: 4rem;
+}
+
+#santa #title-santa i{
+    font-size: 4rem;
+}
+
+#santa #title-santa #gift1{
+    position: absolute;
+    bottom: 0;
+    left: -10rem;
+    color: rgb(149, 0, 0);
+    animation: colorAnimation2 5s linear infinite;
+}
+
+#santa #title-santa #gift2{
+    position: absolute;
+    bottom: 0;
+    right: -10rem;
+    color: rgb(149, 0, 0);
+    animation: colorAnimation2 5s linear infinite;
+}
+
+#container-points{
+    gap: 100px;
+}
+
+#santa .point{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: colorAnimation 5s linear infinite;
+    background-color: red;
+}
+
+@keyframes colorAnimation
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes colorAnimation2
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(50deg);
+    }
+}
+
+#santa #santa-main{
+    font-family: var(--text-font);
+    height: 79vh;
+}
+
+#santa #santa-main h3{
+    font-size: 4rem;
+}
+
+#santa #santa-bottom{
+    min-height: 100vh;
+    width: 100%;
+}
+
+#santa #santa-bottom #container-img-santa{
+    width: 80%;
+    height: 70vh;
+    overflow: none;
+    background: url(../img/santa.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7%;
+}
+
+#santa #santa-bottom #container-img-santa:hover{
+    filter: grayscale(0.3);
+}
+
+#santa #santa-bottom{
+    font-family: var(--text-font);
+    color: #FFD700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#santa #surprise{
+    min-height: 100vh;
+    width: 100%;
+    border: 1px solid green;
+}
+
+#santa #surprise{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+#snow1{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    background: url(../img/snowflake.png);  
+    background-repeat: no-repeat;
+    background-size: cover;  
+    animation: animateSnow 5s linear infinite;
+    z-index: 888;
+}
+
+@keyframes animateSnow
+{
+    0%
+    {
+        top: 0 0;
+    }
+    100%
+    {
+        top:  100%;
+        left: 60px;
+    }
 }
